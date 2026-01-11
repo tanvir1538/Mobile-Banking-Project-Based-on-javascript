@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnId1">button 1</button>
+    <button id="btnId2">button 2</button>
+
+
+    <h2 id="heading 1">here just only shown when  button 1 clicked </h2>
+     <h2 id="heading 2">here just only shown when  button 2 clicked </h2>
+     
+
+     <script>
+        document.getElementById("btnId1").addEventListener('click',function(){
+            document.getElementById("heading 2").style.display='none';
+
+             document.getElementById("heading 1").style.display='block';
+        })
+
+
+         document.getElementById("btnId2").addEventListener('click',function(){
+            document.getElementById("heading 1").style.display='none';
+
+             document.getElementById("heading 2").style.display='block';
+        })
+     </script>
+</body>
+</html>
